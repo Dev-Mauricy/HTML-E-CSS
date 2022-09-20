@@ -13,7 +13,26 @@
           distinctio dicta, dolorum molestias minima
            laborum rem pariatur animi eos, quos 
            voluptatibus provident.</p>
-           <iframe src="paginas-extras/pag004.html" >
+           <!--SANDBOX --
+            Esse atributo coloca uma segurança em não deixar que 
+            outros sites acessem a página e capturem os dados 
+            inseridos dentro iframe
+           
+            NO REFERRER --
+            Impossibilita que o site capture os dados digitados
+        
+            ALLOW - SAME - ORIGIN
+            Permite conteúdos da mesma origem
+
+            ALLOW - FORMS
+            Permite formulários
+
+            ALLOW - SCRIPTS
+            Permite scripts
+            -->
+           <iframe src="paginas-extras/pag004.html" 
+           sandbox="allow-same-origin allow-forms allow-scripts" 
+           referrerpolicy="no-referrer">
             Seu navegador não é compatívelcom isso...
            </iframe>
            <p>Lorem ipsum dolor sit amet consectetur adipisicing 
