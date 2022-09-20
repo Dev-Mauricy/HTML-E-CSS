@@ -5,13 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iframe 01</title>
 
+    <style>
+        iframe{
+            /* --Hierarquia do documento --
+            Se o iframe tiver sido formatado em html, o Css vai
+            sobrebor as formatações*/
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+
 </head>
 
 <body>
     <h1>Testando o uso de iframe</h1>
     <p>Acessando o site do
 
-        <iframe src="https://www.cursoemvideo.com/" frameborder="0"></iframe>
+        <!--TAMANHO PADRÃO DO IFRAME--
+            300x150 px
+            width/heigh
+
+            Frameborder é 0 ou 1 em HTML
+        -->
+
+        <iframe src="https://www.cursoemvideo.com/" frameborder="0">
+
+        </iframe>
         
         CursoemVideo para testar iframes</p>
 
@@ -21,7 +40,11 @@
         <p>O repositório do Guanabara
 
 
-            <iframe src="https://gustavoguanabara.github.io" frameborder="0"></iframe>
+            <iframe src="https://gustavoguanabara.github.io" 
+            frameborder="0">
+            <!--Caso o iframe dê erro, a págima utilizará o link-->
+            <a href="https://gustavoguanabara.github.io"></a>
+            </iframe>
 
 
 
