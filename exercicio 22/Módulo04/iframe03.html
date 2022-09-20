@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Iframes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela{
+            width: 95vw;
+            height: 400px;
+            border:2px solid black;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <!--USANDO UM IFRAME PARA ABRIR CONTEUDO DENTRO DA
+    PÁGINA ATRAVÉS DE UM MENU DE LINK ATRAVÉS DO TARGET (NOME)-->
+    <h1>Faça uma escolha</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing
+         elit. Magnam iste vitae laborum atque, repellat 
+         sapiente corporis soluta ut aliquid quisquam 
+         recusandae eum sunt, expedita modi cum fuga 
+         excepturi? Voluptate, nisi.</p>
+        
+            <ul>
+                <li><a href="paginas-extras/pag001.html" target="frame">Primeira Página</a></li>
+                <li><a href="paginas-extras/pag002.html" target="frame">Segunda Página</a></li>
+                <li><a href="paginas-extras/pag003.html" target="frame">Terceira Página</a></li>
+            </ul>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Dolorem doloribus unde
+                impedit explicabo facere, similique illum
+                reiciendis repellat debitis nihil, accusamus,
+                minima minus perferendis suscipit tempore eos
+                laboriosam ipsum omnis?
+                Lorem ipsum dolor sit amet consectetur adipisicing
+                 elit. Impedit, placeat natus doloribus, 
+                 doloremque accusamus esse, officiis 
+                 praesentium id aliquid delectus voluptates 
+                 quam. Eos nemo, illum ex assumenda saepe cum esse.
+            </p>
+        
+
+         <!-- O id no Iframe foi opcional
+        Atribuir um nome é obrigatório-->
+
+        <!--  SRC DOC --
+        Colocando esse parâmetro eu consigo colocar html dentro do
+         iframe vazio-->
+            <iframe id="tela" name="frame" srcdoc="<h1> Escolha
+                 uma das opções acima</h1><p>Lorem ipsum dolor 
+                    sit amet consectetur adipisicing elit. 
+                    Quae beatae exercitationem aperiam aliquid 
+                    accusamus quos. Quam praesentium adipisci
+                     quo eos? Obcaecati in unde voluptates
+                      deleniti natus quia amet sapiente eaque?"</p><img src='imagens/cursoemvideo.png'> >
+            <p>Infelizmente seu navegador não é compatível
+                com o Iframe.
+            </p>
+         </iframe>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Ipsa eum nihil ad repellendus rerum reiciendis, 
+             est quod tenetur aperiam dolore? Corporis 
+             laboriosam eius pariatur fugit expedita ullam 
+             eaque corrupti similique.
+            Lorem ipsum dolor sit amet consectetur adipisicing
+             elit. Perspiciatis, voluptatem, alias facere cum nulla 
+             reprehenderit nam accusantium, in fugit labore magni 
+             possimus ratione impedit minima similique unde voluptas
+              aliquam ex.</p>
+    
+</body>
+</html>
